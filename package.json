@@ -1,6 +1,6 @@
 {
   "name": "mongo2postman",
-  "displayName": "MongoTest: Schema to Postman",
+  "displayName": "Mongo2Postman: Schema to Postman",
   "description": "Convert Mongoose schemas to Postman-ready JSON data for easy API testing. Streamline your MongoDB and Postman workflow.",
   "version": "0.0.1",
   "engines": {
@@ -21,30 +21,29 @@
     "Testing",
     "JSON"
   ],
-  "homepage": "https://github.com/BamaCharanChhandogi/mongoose-to-postman",
   "bugs": {
-  "url": "https://github.com/iamkaniska/mongoose-to-postman/issues",
-  "email": "kaniskamaity@gmail.com"
-},
+    "url": "https://github.com/iamkaniska/mongoose-to-postman/issues",
+    "email": "kaniskamaity@gmail.com"
+  },
   "author": {
-  "name": "Kaniska Maity",
-  "email": "kaniskamaity@gmail.com",
-  "url": "https://github.com/iamkaniska"
-},
+    "name": "Kaniska Maity",
+    "email": "kaniskamaity@gmail.com",
+    "url": "https://github.com/iamkaniska"
+  },
   "publisher": "KaniskaMaity",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BamaCharanChhandogi/mongoose-to-postman.git"
+    "url": "https://github.com/iamkaniska/mongoose-to-postman.git"
   },
   "license": "MIT",
   "activationEvents": [
-    "onCommand:mongoose-to-postman.convertToPostmanRaw"
+    "onCommand:mongo2postman.convertToPostmanRaw"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "mongoose-to-postman.convertToPostmanRaw",
+        "command": "mongo2postman.convertToPostmanRaw",
         "title": "Convert to Postman Raw"
       }
     ],
@@ -52,7 +51,7 @@
       "editor/context": [
         {
           "when": "editorHasSelection",
-          "command": "mongoose-to-postman.convertToPostmanRaw",
+          "command": "mongo2postman.convertToPostmanRaw",
           "group": "navigation"
         }
       ]
@@ -66,7 +65,7 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
   },
-"devDependencies": {
+  "devDependencies": {
     "@types/glob": "^7.1.3",
     "@types/mocha": "^8.2.2",
     "@types/node": "14.x",
